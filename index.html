@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/calendar.css">
     <link rel="stylesheet" href="./css/todo.css">
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
+
 <body>
    <input type="test" id="testDate">
    <button id="btn_today">오늘버튼</button>
@@ -20,7 +23,38 @@
     <!-- 달력 -->
 
     <!-- 투두 -->
+    <div class="container">
+        <div class="inner">
+            <div class="date">
+                <div class="arrow clear">
+                    <i class="fas fa-angle-left"></i>
+                    <span>2019.01.08</span>
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="list">
+                <div class="incomplete">
+                    <h2>미완료</h2>
+                    <p>HTML study</p>
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="complete">
+                    <h2>완료</h2>
+                    <p>CSS study</p>
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="add">
+                <input type="text" placeholder="입력하세요">
+                <input type="submit" value="추가">
+            </div>
+
+        </div>
+    </div>
     <script src="./js/calendar.js"></script>
     <script src="./js/todo.js"></script>
 </body>
+
 </html>

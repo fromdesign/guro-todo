@@ -1,0 +1,74 @@
+.container {
+    margin-top: 100px;
+    width: 480px;
+    margin: 0 auto;
+    background: #e3e9f2;
+}
+.inner {
+    padding: 30px 50px;
+}
+
+/*
+date
+*/
+.date, .list {
+    margin-bottom: 50px;
+}
+.date .arrow {
+    vertical-align: top;
+}
+.date .arrow i {
+    float: left;
+    width: 5%;
+    font-size: 30px;
+    cursor: pointer;
+}
+.date .arrow i.fas fa-angle-left {
+    text-align: left;
+}
+.date .arrow i.fas fa-angle-right {
+    text-align: right;
+}
+.date .arrow span {
+    float: left;
+    width: 90%;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/*
+list
+*/
+.list {
+    padding: 0 20px;
+}
+.list .incomplete h2, .list .complete h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.list .incomplete p, .list .complete p {
+    float: left;
+    width: 70%;
+    font-size: 18px;
+}
+.list i {
+    width: 30%;
+    font-size: 18px;
+}
+
+.list i.fas fa-check {
+    float: left;
+}
+.list .incomplete {
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
