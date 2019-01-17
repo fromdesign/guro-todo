@@ -1,28 +1,51 @@
-.wrap {padding: 50px;}  
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+body {
+    font-family: 'BMJUA';
+    background-color: beige;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}  
 
 h1 {
     display: inline-block;
+    font-size: 25px;
+    line-height: 50px;
+    margin: 0 30px;
 }
 
-table {
-    width: 100%;
-    border: 1px solid #444444;
-    box-sizing: border-box;
-    border-collapse: collapse;
-}
+
 
 caption {
     height: 50px;
     line-height: 50px;
+    font-size: 25px;
 }
 
 th, td {
-    border: 1px solid #444444;
     height: 50px;
+    width: 50px;
     line-height: 50px;
     text-align: center;
+    font-size: 18px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    margin: 5px;
 }
 
 td.on {
-    background-color: red;
+    background-color: rgba(0,0,0,0.2);
+    color: orangered;
+}
+
+th.red {
+    color: red;
+}
+
+th.blue {
+    color: blue;
 }

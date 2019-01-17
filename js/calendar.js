@@ -54,21 +54,24 @@ function nextCalendar() {//다음 달
              todayMonth = new Date(year, month_day, 1).getDay();
              lastDate = new Date(lastday).getDate();
              monthLabel = month[month_day];
-             head = year + '-' + monthLabel;
+             head = year + '-' + monthLabel;             
              $('h1').text(head);
-             setCalendar ()
+             $('#todatD').val(year + '-' + (month_day + 1));
+             setCalendar ();
          }else {
              todayMonth = new Date(year, month_day, 1).getDay();
              lastDate = new Date(lastday).getDate();
              monthLabel = month[month_day];
              head = year + '-' + monthLabel;
              $('h1').text(head);
+             $('#todatD').val(year + '-' + (month_day + 1));
              setCalendar ()
          }
         }
 
 function setCalendar () {
     var x = todayMonth;
+    $('#todatD').val(year + '-' + (month_day + 1));
     for (var i = 1; i <= lastDate; i++  ) {
         $('td').eq(x).text(i);
         x = x+1;
@@ -84,6 +87,10 @@ $('td').eq(today_date+1).addClass('on');
 $('td').click(function(){
     $('td').removeClass('on');
     $(this).addClass('on');
+    var todayDate = $(this).text();
+    var todayD = $('#todatD').val();
+    var todayName = todayD + '-' + todayDate ;
+    alert(todayName);
 })
 
 
